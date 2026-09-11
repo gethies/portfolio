@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, ArrowRight, Download, Mail, Cpu, Globe, Award } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import { profileImageBase64 } from '../assets/profileData';
+
 import profileImg from '../assets/profile.jpg';
 
 
@@ -156,7 +158,7 @@ export default function Hero({ onOpenContact, onOpenResume }) {
               <div className="relative bg-[#0f172a] border border-cyan-500/30 rounded-3xl p-4 sm:p-6 shadow-2xl backdrop-blur-xl">
                 <div className="relative overflow-hidden rounded-2xl aspect-square border border-white/10 group-hover:border-cyan-400/50 transition-colors">
                   <img
-                    src="./profile.jpg"
+                    src={profileImageBase64}
                     alt="Gethies B Profile"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   />
